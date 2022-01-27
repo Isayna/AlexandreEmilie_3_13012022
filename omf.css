@@ -1,11 +1,135 @@
-body{
-    font-family: "Roboto" , sans-serif;
-}
-h1{
-    font-family: "shrikhand" , "cursive";
-}
-.logo img{
-    align-items: center;
-    width: 100px;
 
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+  }
+.logo-omf{
+    display: flex;
+    justify-content: center;
 }
+#end{
+    background-color: #000;
+    color: #fff;
+}
+.footer-title{
+    font-family: "shrikhand", cursive;
+}
+#end .link{
+    text-decoration: solid #fff;
+    color: #fff;
+}
+.restaurant-card .link{
+    text-decoration: solid #fff;
+    color: #000;
+}
+
+
+@media only screen and (max-width: 767px) { 
+  .logo-omf img {
+    padding: 15px;
+    width: 160px;
+  }
+  #search-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f3f3f3;
+      padding-bottom: 50px;
+  }
+  .input-container{
+      display: flex;
+      border: none;
+      width: 100%;
+      justify-content: center;
+      background-color: #eaeaea;
+  }
+  input{
+      border: none;
+      background-color: #eaeaea;
+      font-size: 16px;
+      padding-left: 10px;
+  }
+  .logo-search{
+      display: flex;
+      align-items: center;
+      background-color: #eaeaea;
+      margin-left: 70px;
+  }
+  .presentation-sentence,.kicker{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+  .presentation-sentence{
+      font-size: 25px;
+      margin-bottom: 0px;
+  }
+  .kicker{
+      font-size: medium;
+  }
+  .explore-button{
+      border: none;
+      color: #fff;
+      font-size: medium;
+      background-color: #FF79DA;
+      height: 50px;
+      width: 215px;
+      border-radius: 30px;
+      box-shadow: 5px 5px 15px #cecece;
+      background: linear-gradient(#FF79DA,#9356DC);
+      }
+  .choice-list{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+  }
+  .choice-list {
+    list-style-type: none;
+  }
+  
+  .choice-item {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+  }
+  
+  .choice-list li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    background-color: #9356DC;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 20px;
+  }
+  #restaurant-section{
+      background-color: #f3f3f3;
+      padding: 20px;
+      width: auto;
+  }
+  .card-container{
+      display: flex;
+      flex-direction: column;
+  }
+  .restaurant-card{
+      display: flex;
+      flex-direction: column;
+  }
+  .new{
+      background-color: aquamarine;
+      position: absolute;
+      left: 84%;
+      margin-top: 10px;
+      color: darkgreen;
+  }
+  .picture img{
+      object-fit: cover;
+      width: 100%;
+      height: 300px;
+  }
+  .description-picture{
+      background-color: #fff;
+  }
+
+
+  }
+
