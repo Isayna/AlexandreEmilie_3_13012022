@@ -3,24 +3,52 @@ body {
     font-family: "Roboto", sans-serif;
     margin: 0px;
   }
+  h1{
+      font-weight: 1000;
+  }
 .logo-omf{
     display: flex;
     justify-content: center;
 }
+.explore-button{
+    border: none;
+    color: #fff;
+    font-size: medium;
+    
+    height: 50px;
+    width: 215px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #cecece;
+    background: linear-gradient(to top left, #9356DC, #FF79DA);
+    }
+.link{
+    text-decoration: none;
+    color: #000;
+    }    
 #end{
     background-color: #000;
-    color: #fff;
+  
 }
 .footer-title{
     font-family: "shrikhand", cursive;
-}
-#end .link{
-    text-decoration: solid #fff;
     color: #fff;
+    padding: 16px;
 }
-.restaurant-card .link{
-    text-decoration: solid #fff;
-    color: #000;
+.footer-link, a{
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-item{
+    display: flex;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-link .fas{
+    padding-right: 10px;
 }
 
 
@@ -67,29 +95,28 @@ body {
   .kicker{
       font-size: medium;
   }
-  .explore-button{
-      border: none;
-      color: #fff;
-      font-size: medium;
-      background-color: #FF79DA;
-      height: 50px;
-      width: 215px;
-      border-radius: 30px;
-      box-shadow: 5px 5px 15px #cecece;
-      background: linear-gradient(#FF79DA,#9356DC);
-      }
+  #fonctionnement-section h1{
+      padding: 20px;
+  }
+  
   .choice-list{
       display: flex;
       flex-direction: column;
       gap: 50px;
-  }
-  .choice-list {
-    list-style-type: none;
+      list-style-type: none;
+      padding: 20px;
   }
   
   .choice-item {
     counter-increment: step-counter;
     margin-bottom: 10px;
+    height: 70px;
+    border: 1px solid #f2f2f2;
+    width: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #f2f2f2;
   }
   
   .choice-list li::before {
@@ -99,7 +126,14 @@ body {
     color: white;
     font-weight: bold;
     padding: 3px 8px;
-    border-radius: 20px;
+    border-radius: 30px;
+  }
+  .choice-item .fas {
+      color: gray;
+      padding: 10px;
+  }
+  .choice-item:hover{
+      background-color: #d6c6f4;
   }
   #restaurant-section{
       background-color: #f3f3f3;
@@ -113,11 +147,14 @@ body {
   .restaurant-card{
       display: flex;
       flex-direction: column;
+      background-color: #fff;
+      margin-bottom: 16px;
+      border-radius: 20px;
   }
   .new{
       background-color: aquamarine;
       position: absolute;
-      left: 84%;
+      left: 75%;
       margin-top: 10px;
       color: darkgreen;
   }
@@ -125,9 +162,11 @@ body {
       object-fit: cover;
       width: 100%;
       height: 300px;
+      border-radius: 20px 20px 0px 0px;
   }
   .description-picture{
       background-color: #fff;
+      border-radius: 20px;
   }
 
 
