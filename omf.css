@@ -10,6 +10,12 @@ body {
     display: flex;
     justify-content: center;
 }
+.arrow{
+    color: #000;
+}
+.menu-title{
+    font-family: "shrikhand", cursive;
+}
 .explore-button{
     border: none;
     color: #fff;
@@ -167,6 +173,30 @@ body {
   .description-picture{
       background-color: #fff;
       border-radius: 20px;
+  }
+
+
+
+
+  .start-back{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      padding: 16px;
+  }
+  .start-logo{
+      display: flex;
+      width: auto;
+      height: 30px;
+  }
+  
+  .main-picture{
+      width: auto;
+  }
+  .main-picture img{
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
   }
 
 
