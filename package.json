@@ -1,0 +1,19 @@
+{
+  "name": "p3_alexandre_emilie",
+  "version": "1.0.0",
+  "description": "\"Projet 3 openclassrooms/dynamiser une page web avec des animations css\" ",
+  "main": "index.js",
+  "scripts": {
+    "sass":  "sass --watch ./sass/omf.scss:.public/css/omf.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isayna/AlexandreEmilie_3_13012022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isayna/AlexandreEmilie_3_13012022/issues"
+  },
+  "homepage": "https://github.com/Isayna/AlexandreEmilie_3_13012022#readme"
+}
