@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/css/omf.css" />
+    <link rel="stylesheet" href="./sass/omf.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -31,49 +32,49 @@
         </div>
       </div>
     </header>
-    <div class="main-picture"><img
-      src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-      alt="la palette du gout"/>
-    </div>  
+    <div class="main-picture">
+      <img
+        src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="la palette du gout"
+      />
+    </div>
     <section id="menu-section">
       <div class="menu-title">
         <h1 class="restaurant-name">La palette du goût</h1>
-        <div class="logo"><i class="far fa-heart"></i></div>
+        <div class="logo-heart"><i class="far fa-heart"></i></div>
       </div>
       <div class="menu-container">
         <section class="meal-section">
           <div class="meal-title">entrées</div>
           <ol class="meal-list">
             <li class="meal-item">
-              <div class="meal-name">Fricassée d'escargot</div>
-              <div class="description-menu">Au piment d'espelette</div>
-              <div class="price">25€</div>
-              <div class="confirmation-menu">
-                <div class="confirmation-logo">
-                  <i class="far fa-check-circle"></i>
-                </div>
+              <div class="meal-name">
+                <h3>Fricassée d'escargot</h3>
+                <p>Au piment d'espelette</p>
+                <div class="price">25€</div>
+              </div>
+              <div class="confirmation-logo">
+                <i class="far fa-check-circle"></i>
               </div>
             </li>
             <li class="meal-item">
-              <div class="meal-name">Foie gras de canard mi-cuit</div>
-              <div class="description-menu">Et ses copeaux de truffe noire</div>
-              <div class="price">35€</div>
-              <div class="confirmation-menu">
-                <div class="confirmation-logo">
-                  <i class="far fa-check-circle"></i>
-                </div>
+              <div class="meal-name">
+                <h3>Foie gras de canard mi-cuit</h3>
+                <p>Et ses copeaux de truffe noire</p>
+                <div class="price">35€</div>
+              </div>
+              <div class="confirmation-logo">
+                <i class="far fa-check-circle"></i>
               </div>
             </li>
             <li class="meal-item">
-              <div class="meal-name">Oeuf au plat</div>
-              <div class="description-menu">
-                Assaisoné à la truffe sur lit de caviar
+              <div class="meal-name">
+                <h3>Oeuf au plat</h3>
+                <p>Assaisoné à la truffe sur lit de caviar</p>
+                <div class="price">20€</div>
               </div>
-              <div class="price">20€</div>
-              <div class="confirmation-menu">
-                <div class="confirmation-logo">
-                  <i class="far fa-check-circle"></i>
-                </div>
+              <div class="confirmation-logo">
+                <i class="far fa-check-circle"></i>
               </div>
             </li>
           </ol>
@@ -82,37 +83,33 @@
           <div class="meal-title">plats</div>
           <ol class="meal-list">
             <li class="meal-item">
-              <div class="meal-name">Filet de boeuf aux herbes</div>
-              <div class="description-menu">
-                Accompagné de sa ribambelle de légumes
+              <div class="meal-name">
+                <h3>Filet de boeuf aux herbes</h3>
+                <p>Accompagné de sa ribambelle de légumes</p>
+                <div class="price">40€</div>
               </div>
-              <div class="price">40€</div>
-              <div class="confirmation-menu">
-                <div class="confirmation-logo">
-                  <i class="far fa-check-circle"></i>
-                </div>
+              <div class="confirmation-logo">
+                <i class="far fa-check-circle"></i>
               </div>
             </li>
             <li class="meal-item">
-              <div class="meal-name">Parmentier de queue de boeuf</div>
-              <div class="description-menu">
-                À la truffe noire sur sa purée de panais
+              <div class="meal-name">
+                <h3>Parmentier de queue de boeuf</h3>
+                <p>À la truffe noire sur sa purée de panais</p>
+                <div class="price">35€</div>
               </div>
-              <div class="price">35€</div>
-              <div class="confirmation-menu">
-                <div class="confirmation-logo">
-                  <i class="far fa-check-circle"></i>
-                </div>
+              <div class="confirmation-logo">
+                <i class="far fa-check-circle"></i>
               </div>
             </li>
             <li class="meal-item">
-              <div class="meal-name">Filet de turbo</div>
-              <div class="description-menu">Aux agrumes</div>
-              <div class="price">44€</div>
-              <div class="confirmation-menu">
-                <div class="confirmation-logo">
-                  <i class="far fa-check-circle"></i>
-                </div>
+              <div class="meal-name">
+                <h3>Filet de turbo</h3>
+                <p>Aux agrumes</p>
+                <div class="price">44€</div>
+              </div>
+              <div class="confirmation-logo">
+                <i class="far fa-check-circle"></i>
               </div>
             </li>
           </ol>
@@ -121,41 +118,38 @@
           <div class="meal-title">desserts</div>
           <ol class="meal-list">
             <li class="meal-item">
-              <div class="meal-name">Paris-Brest</div>
-              <div class="description-menu">Revisité</div>
-              <div class="price">18€</div>
-              <div class="confirmation-menu">
-                <div class="confirmation-logo">
-                  <i class="far fa-check-circle"></i>
-                </div>
+              <div class="meal-name">
+                <h3>Paris-Brest</h3>
+                <p>Revisité</p>
+                <div class="price">18€</div>
+              </div>
+              <div class="confirmation-logo">
+                <i class="far fa-check-circle"></i>
               </div>
             </li>
             <li class="meal-item">
-              <div class="meal-name">Macaron au chocolat d'exception</div>
-              <div class="description-menu">
-                Et glace à la vanille de Madagascar
+              <div class="meal-name">
+                <h3>Macaron au chocolat d'exception</h3>
+                <p>Et glace à la vanille de Madagascar</p>
+                <div class="price">22€</div>
               </div>
-              <div class="price">22€</div>
-              <div class="confirmation-menu">
-                <div class="confirmation-logo">
-                  <i class="far fa-check-circle"></i>
-                </div>
+              <div class="confirmation-logo">
+                <i class="far fa-check-circle"></i>
               </div>
             </li>
             <li class="meal-item">
-              <div class="meal-name">Mousse au chocolat</div>
-              <div class="description-menu">
-                Au piment d'Espelette et à la truffe noire
+              <div class="meal-name">
+                <h3>Mousse au chocolat</h3>
+                <p>Au piment d'Espelette et à la truffe noire</p>
+                <div class="price">23€</div>
               </div>
-              <div class="price">23€</div>
-              <div class="confirmation-menu">
-                <div class="confirmation-logo">
-                  <i class="far fa-check-circle"></i>
-                </div>
+              <div class="confirmation-logo">
+                <i class="far fa-check-circle"></i>
               </div>
             </li>
           </ol>
         </section>
+        <div class="button">Commander</div>
       </div>
     </section>
     <footer id="end">
@@ -164,7 +158,8 @@
         <ul class="footer-list">
           <li class="footer-link">
             <a href="#">
-              <i class="fas fa-utensils"></i>Proposer un restaurant</a>
+              <i class="fas fa-utensils"></i>Proposer un restaurant</a
+            >
           </li>
           <li class="footer-link">
             <a href="#">

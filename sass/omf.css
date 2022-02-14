@@ -1,0 +1,627 @@
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+/*loader*/
+.center {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  z-index: 1000;
+  -webkit-animation: fadeout 0s 3s forwards;
+          animation: fadeout 0s 3s forwards;
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(#99e2d0, #9356dc, #ff79da);
+  margin: 10px;
+  border-radius: 20px;
+  -webkit-animation: wave 4s linear infinite;
+          animation: wave 4s linear infinite;
+  opacity: 1;
+}
+
+.wave:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+/*page d'accueil*/
+.logo-omf {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+@media screen and (max-width: 600px) {
+  .logo-omf {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-omf img {
+    padding: 15px;
+    width: 160px;
+  }
+}
+
+#search-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding-bottom: 50px;
+}
+#search-section .logo-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 70px;
+}
+#search-section .input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-color: #dadada;
+  box-shadow: 0px 5px 5px darken #f3f3f3, 2% inset;
+}
+#search-section input {
+  border: none;
+  background-color: #dadada;
+  font-size: 16px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 600px) {
+  #search-section .presentation-sentence, #search-section .kicker {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  #search-section .presentation-sentence {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #search-section .kicker {
+    font-size: 16px;
+  }
+}
+
+.button {
+  margin: auto;
+  text-align: center;
+  padding: 20px 0px;
+  border: #dadada;
+  color: #fff;
+  font-size: medium;
+  width: 215px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: #dadada 0px 8px 30px;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(150deg, #ff79da 50%, #9356dc 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: 500ms ease-in-out;
+  box-shadow: gray 0px 8px 30px;
+}
+.button:hover::after {
+  opacity: 1;
+  border-radius: 30px;
+}
+
+#fonctionnement-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+}
+@media screen and (max-width: 600px) {
+  #fonctionnement-section {
+    display: block;
+  }
+}
+#fonctionnement-section .choice-list {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  #fonctionnement-section .choice-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#fonctionnement-section .choice-list li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  background-color: #9356dc;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 20px;
+  position: relative;
+  left: -3%;
+}
+#fonctionnement-section .choice-item {
+  display: flex;
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+  height: 70px;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  padding-right: 10px;
+  position: relative;
+  border: 1px solid #f3f3f3;
+}
+#fonctionnement-section .choice-item:hover {
+  background-color: #ae80e5;
+}
+#fonctionnement-section .choice-item .fas {
+  color: #8d8d8d;
+  padding: 10px;
+}
+#fonctionnement-section .choice-item .fas:hover {
+  background-color: #ae80e5;
+}
+
+#restaurant-section {
+  background-color: #f3f3f3;
+  width: auto;
+  padding: 20px;
+}
+#restaurant-section .card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+@media screen and (max-width: 600px) {
+  #restaurant-section .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#restaurant-section .restaurant-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  width: 100%;
+}
+#restaurant-section .new {
+  background-color: #99e2d0;
+  position: absolute;
+  right: 10px;
+  margin-top: 15px;
+  color: #1b6150;
+  padding: 5px;
+}
+#restaurant-section .description-picture {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-left: 16px;
+  padding-bottom: 10px;
+}
+#restaurant-section .picture img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+#restaurant-section .title {
+  display: flex;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 900;
+  padding-top: 5px;
+}
+#restaurant-section .logo-heart {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 5px;
+  align-items: center;
+  padding-right: 7px;
+  font-size: 20px;
+}
+
+/*footer*/
+#end {
+  background-color: #000;
+}
+#end .footer-title {
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+  padding: 16px;
+}
+#end .footer-link,
+#end a {
+  list-style-type: none;
+  color: #fff;
+  text-decoration: none;
+}
+#end .footer-item {
+  display: flex;
+}
+#end .footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#end .footer-link .fas {
+  padding-right: 10px;
+}
+
+/*page des restaurants*/
+.start-back {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+.start-back .arrow {
+  color: #000;
+}
+.start-back .start-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+}
+
+.main-picture {
+  width: auto;
+}
+.main-picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#menu-section {
+  background-color: #f3f3f3;
+  overflow: hidden;
+  position: relative;
+  margin-top: -40px;
+  border-radius: 30px 30px 0px 0px;
+  padding-bottom: 60px;
+}
+#menu-section .menu-container {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+}
+@media screen and (max-width: 600px) {
+  #menu-section .menu-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#menu-section .meal-section {
+  width: 30%;
+  -webkit-animation: menutop 3s ease-in-out forwards;
+          animation: menutop 3s ease-in-out forwards;
+  position: relative;
+  opacity: 0;
+}
+@media screen and (max-width: 600px) {
+  #menu-section .meal-section {
+    width: auto;
+  }
+}
+#menu-section .menu-title {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  font-size: medium;
+  margin-top: 16px;
+}
+#menu-section .menu-title .logo-heart {
+  align-self: center;
+  font-size: large;
+}
+#menu-section .meal-title {
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+#menu-section .meal-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+#menu-section .meal-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+#menu-section .meal-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 15px;
+}
+#menu-section h3,
+#menu-section p {
+  margin: 0;
+}
+#menu-section .price {
+  display: flex;
+  align-self: flex-end;
+  padding-right: 10px;
+}
+#menu-section .confirmation-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  width: 20%;
+  height: 70px;
+  margin-right: -100px;
+  background-color: #99e2d0;
+  color: #fff;
+  border-radius: 0px 15px 15px 0px;
+  transition: 500ms ease-in-out;
+}
+#menu-section .meal-name:hover {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#menu-section .confirmation-logo:hover,
+#menu-section h3,
+#menu-section p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#menu-section .meal-item:hover .confirmation-logo {
+  margin-right: 0px;
+}
+#menu-section .confirmation-logo:hover .meal-item {
+  width: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#menu-section .confirmation-logo:hover .meal-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+#menu-section .meal-item:hover .fa-check-circle {
+  transform: rotate(360deg);
+}
+#menu-section .fa-check-circle {
+  transform: rotate(0);
+  transition-duration: 1500ms;
+}
+@-webkit-keyframes menutop {
+  0% {
+    bottom: 100%;
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  50%, 100% {
+    top: 0;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes menutop {
+  0% {
+    bottom: 100%;
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  50%, 100% {
+    top: 0;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+#menu-section .meal-section:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+#menu-section .meal-section:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+/*remplissage du coeur*/
+.fa-heart {
+  position: relative;
+  z-index: 1;
+}
+
+.fa-heart::after {
+  content: "\f004";
+  display: initial;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  font-weight: bold;
+}
+
+.fa-heart:hover::before {
+  transform: scaleY(0);
+}
+
+.fa-heart:hover::after {
+  opacity: 1;
+  top: 0%;
+  transition: 0.3s ease-in-out;
+  -webkit-animation: heart 3s ease-in-out forwards;
+          animation: heart 3s ease-in-out forwards;
+  transform: scaleY(1);
+}
+
+@media screen and (max-width: 600px) {
+  .fa-heart:active::after {
+    opacity: 1;
+    top: 0%;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: heart 3s ease-in-out forwards;
+            animation: heart 3s ease-in-out forwards;
+    transform: scaleY(1);
+  }
+}/*# sourceMappingURL=omf.css.map */
