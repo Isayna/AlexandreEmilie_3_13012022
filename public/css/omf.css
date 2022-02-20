@@ -13,19 +13,19 @@ body {
   align-items: center;
   background: #fff;
   z-index: 1000;
-  
-  animation: wave 3s linear 5 ;
   opacity: 1;
 }
+
+
 .wave {
   
   width: 5px;
   height: 100px;
-  background: linear-gradient(45deg, #99e2d0, #9356DC, #FF79DA);
+  background: linear-gradient(45deg, #99e2d0, #9356DC,#99e2d0, #FF79DA);
   margin: 10px;
-  animation: wave 3s linear 5;
+  animation: wave 4s linear infinite;
   border-radius: 20px;
-  animation-fill-mode: forwards;
+  
   opacity: 1;
   
 }
@@ -59,16 +59,16 @@ body {
 
 @keyframes wave {
   0% {
-    transform: scale(0);
+    transform: scale(0.5);
     opacity: 1;
   }
-  50%, 100%{
+  50%{
     transform: scale(1);
   }
   100% {
     transform: scale(0);
     opacity: 0;
-    display: none;
+    
   }
 }
 
@@ -323,6 +323,10 @@ input{
   column-gap: 30px;
   flex-wrap: wrap;
   padding: 0px 20px;
+  
+}
+.meal-section{
+  width: 30%;
 }
 .meal-title{
   text-transform: uppercase;
@@ -337,19 +341,72 @@ input{
 }
 .meal-item{
   display: flex;
-  flex-direction: column;
-  padding: 10px;
+  width: 100%;
+ 
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
   background-color: #fff;
   border-radius: 20px;
   margin-bottom: 15px;
+  overflow: hidden;
+
 }
-.meal-name, .price{
-  font-weight: 900;
+.meal-name{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
+h3, p{
+  margin: 0px;
+}
+
 .price{
   display: flex;
   align-self: flex-end;
+  padding-right: 10px;
 }
+.confirmation-logo{
+  content:"";
+width: 20%;
+height: 70px;
+margin-right: -27%;
+background-color: #99e2d0;
+color:#fff;
+border-radius: 0px 15px 15px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 500ms ease-in-out;
+}
+.confirmation-logo:hover .meal-item{
+  width: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.confirmation-logo:hover .meal-name{
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.meal-item:hover .confirmation-logo{
+  margin-right:0px
+}
+.meal-item:hover .fa-check-circle {
+  transform: rotate(360deg);
+
+}
+.fa-check-circle{
+  transform: rotate(0);
+  transition-duration: 1500ms;
+
+}
+
+
+
+
 /*remplissage du coeur*/
 .fa-heart{
  background-color: #fff;
@@ -422,6 +479,9 @@ input{
 .menu-container{
   display: flex;
   flex-direction: column;
+}
+.meal-section{
+  width: auto;
 }
 
 
