@@ -331,18 +331,22 @@ a {
 }
 /*animation du menu*/
 
+  
+  
+
 @keyframes menutop {
   0%{
-    bottom: -100%;
-    transform: translateY(0);
-  }
- 
-  100%{
-    bottom: 0%;
-    transform: translate(1);
+    bottom: 100%;
+    transform: translateY(100%);
     opacity: 1;
   }
-  
+ 
+  50%, 100%{
+   top: 0%;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
 }
 
 .meal-title {
