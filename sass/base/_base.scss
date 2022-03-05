@@ -1,0 +1,19 @@
+body {
+    font-family: $font-txt;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .link {
+    text-decoration: none;
+    color: #000;
+  }
+  h1 {
+    font-weight: $bold;
+    margin: 0;
+  }
+  h2 {
+    font-weight: 100;
+  }
+  

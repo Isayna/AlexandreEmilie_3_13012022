@@ -1,0 +1,27 @@
+/*footer*/
+#end {
+    background-color: #000;
+  
+    .footer-title {
+      font-family: $font-logo;
+      color: $clr-background;
+      padding: 16px;
+    }
+    .footer-link,
+    a {
+      list-style-type: none;
+      color: $clr-background;
+      text-decoration: none;
+    }
+    .footer-item {
+      @include flex;
+    }
+    .footer-list {
+      @include column;
+      gap: 15px;
+    }
+    .footer-link .fas {
+      padding-right: 10px;
+    }
+  }
+  

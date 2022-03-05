@@ -1,0 +1,44 @@
+/*remplissage du coeur*/
+.fa-heart {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }  
+    .fa-heart::after{
+      content: "\f004";
+      display: initial;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      background: $background-duo;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+      font-weight: bold;
+    }
+      .fa-heart:hover::before{ 
+        transform: scaleY(0);
+      }
+        .fa-heart:hover::after{
+          opacity: 1;
+          top: 0%;
+          transition: .3s ease-in-out;
+          animation: heart 3s ease-in-out forwards;
+          transform: scaleY(1);
+        }
+          @include mobile-only{
+            .fa-heart:active::after{
+              opacity: 1;
+              top: 0%;
+              transition: .3s ease-in-out;
+              animation: heart 3s ease-in-out forwards;
+              transform: scaleY(1);
+            }
+          }
+        
+    
+  
+  

@@ -1,0 +1,37 @@
+.button {
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px;
+    border: $color-dark;
+    color: $clr-background;
+    font-size: medium;
+    width: 215px;
+    border-radius: $br-button;
+    position: relative;
+    z-index: 1;
+    background: $background-duo-reverse;
+    box-shadow: $color-dark 0px 8px 30px;
+    cursor: pointer;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(
+        150deg,
+        $color-secondary 50%,
+        $color-primary 100%
+      );
+      opacity: 0;
+      z-index: -1;
+      transition: 500ms ease-in-out;
+      box-shadow: gray 0px 8px 30px;
+    }
+    &:hover::after {
+      opacity: 1;
+      border-radius: $br-button;
+    }
+  }
+  
