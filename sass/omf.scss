@@ -1,60 +1,6 @@
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-tertiary: #99e2d0;
-$clr-background: #fff;
-$color-background: #f3f3f3;
-$color-dark: darken($color-background, 10%);
-$background-degrade: linear-gradient(
-  $color-tertiary,
-  $color-primary,
-  $color-secondary
-);
-$background-duo: linear-gradient($color-primary, $color-secondary);
-$background-duo-reverse: linear-gradient($color-secondary, $color-primary);
-$font-logo: "Shrikhand", cursive;
-$font-txt: "roboto", sans-serif;
-$width: 100%;
-$border-radius: 20px;
-$br-button: 30px;
-$shadow: 5px 5px 15px $color-dark;
-$bold: 900;
-$breakpoints: (mobile: 600px);
-@mixin mobile-only {
-  @media screen and(max-width: map-get($breakpoints, mobile)) {
-    @content;
-  }
-}
+@import "./utils/variables";
+@import "./utils/mixins";
 
-@mixin flex {
-  display: flex;
-  
-}
-@mixin center {
-  display: flex;
-  justify-content: center;
-  
-}
-@mixin align-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@mixin column {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin column-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@mixin ellipse {
-  text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
 
 body {
   font-family: $font-txt;

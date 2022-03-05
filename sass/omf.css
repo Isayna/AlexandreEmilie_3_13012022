@@ -225,6 +225,7 @@ h2 {
   z-index: 1;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: #dadada 0px 8px 30px;
+  cursor: pointer;
 }
 .button:after {
   content: "";
@@ -288,6 +289,7 @@ h2 {
   padding-right: 10px;
   position: relative;
   border: 1px solid #f3f3f3;
+  cursor: pointer;
 }
 #fonctionnement-section .choice-item:hover {
   background-color: #ae80e5;
@@ -583,6 +585,7 @@ h2 {
 .fa-heart {
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 
 .fa-heart::after {
