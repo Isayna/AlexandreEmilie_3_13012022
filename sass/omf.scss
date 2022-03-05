@@ -216,6 +216,7 @@ h2 {
   z-index: 1;
   background: $background-duo-reverse;
   box-shadow: $color-dark 0px 8px 30px;
+  cursor: pointer;
   &:after {
     content: "";
     position: absolute;
@@ -275,6 +276,7 @@ h2 {
     padding-right: 10px;
     position: relative;
     border: 1px solid $color-background;
+    cursor: pointer;
 
     &:hover {
       background-color: lighten($color-primary, 10%);
@@ -538,6 +540,7 @@ h2 {
 .fa-heart {
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }  
   .fa-heart::after{
     content: "\f004";
