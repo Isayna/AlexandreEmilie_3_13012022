@@ -164,7 +164,7 @@ h2 {
   width: 100%;
   height: 50px;
   background-color: #dadada;
-  box-shadow: 0px 5px 5px darken #f3f3f3, 2% inset;
+  box-shadow: 0px 5px 5px #eeeeee inset;
 }
 #search-section input {
   border: none;
